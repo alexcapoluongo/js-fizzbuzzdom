@@ -9,16 +9,16 @@ for (let i = 1; i <= 100; i++) {
     } else if ( i % 3 === 0) {
         fizzOrBuzz = 'fizz';
     } else {
-        fizzOrBuzz = '';
+        fizzOrBuzz = `${i}`;
     }
 
     // 2. stampare in console
-    console.log(i, fizzOrBuzz);
+    console.log(fizzOrBuzz);
     
     // 3.aggiungere elementi in dom con i
 
     const rowWrapper = document.querySelector('.row');
-    rowWrapper.innerHTML += `<div class= "box ${fizzOrBuzz}">${i}  ${fizzOrBuzz}</div>`;
+    rowWrapper.innerHTML += `<div class= "box ${fizzOrBuzz}">${fizzOrBuzz}</div>`;
 }
 
 
