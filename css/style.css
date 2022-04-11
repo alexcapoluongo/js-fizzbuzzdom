@@ -1,0 +1,23 @@
+body {
+    background-color: #083b4c;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+.container {
+    width:80%;
+    margin: 0 auto;
+}
+
+
+
+.box {
+    height: 80px;
+    width: 80px;
+    border:2px solid red;
+    background-color: blue;
+}

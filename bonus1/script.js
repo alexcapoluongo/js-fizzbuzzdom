@@ -12,4 +12,11 @@ for (let i = 1; i <= 100; i++) {
 
     // 2. stampare in console
     console.log(i, fizzOrBuzz);
+    
+    // 3.aggiungere elementi in dom con i
+
+    const rowWrapper = document.querySelector('.row');
+    rowWrapper.innerHTML += `<div class= "box">${i}</div>`;
 }
+
+
