@@ -8,6 +8,8 @@ for (let i = 1; i <= 100; i++) {
         fizzOrBuzz = 'buzz';
     } else if ( i % 3 === 0) {
         fizzOrBuzz = 'fizz';
+    } else {
+        fizzOrBuzz = '';
     }
 
     // 2. stampare in console
@@ -16,7 +18,7 @@ for (let i = 1; i <= 100; i++) {
     // 3.aggiungere elementi in dom con i
 
     const rowWrapper = document.querySelector('.row');
-    rowWrapper.innerHTML += `<div class= "box">${i}</div>`;
+    rowWrapper.innerHTML += `<div class= "box ${fizzOrBuzz}">${i}  ${fizzOrBuzz}</div>`;
 }
 
 
